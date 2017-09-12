@@ -3,12 +3,16 @@
 	height: 40px;
 	margin-top: 10px;
 	border-bottom: 2px solid #757575;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .ngm-select-floating-label{
 	position: relative;
     left: 0px;
     font-size: 12px;
     visibility:hidden;
+}
+.ngm-select-active-float-label{
+	color: #2979FF;
 }
 .ngm-select-selected-item{
 	cursor: pointer;
@@ -27,14 +31,15 @@
 }
 .ngm-select-load-header{
 	padding: 10px;
-	background: #6200EA;
+	background: #2979FF;
 	font-size: 16px;
 	color: #FFF;
 	z-index: 999;
+	text-align: center;
 }
 
 .ngm-select-load-list-container{
-	max-height: 300px;
+	max-height: 250px;
 	overflow: auto;
 	z-index: 999;
 	background:#FFF;
@@ -45,7 +50,7 @@
 }
 .ngm-select-input-bottom
 {
-border-bottom: 2px solid #6200EA;
+border-bottom: 2px solid #2979FF;
 }
 .ngm-select-backdrop{
 	position: fixed;

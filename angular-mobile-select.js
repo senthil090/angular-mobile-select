@@ -19,7 +19,7 @@
    		scope: { placeholder: "@", list: "=", selected: "=", property: "@" },
  		template: '<div class="ngm-select" ng-class="{\'ngm-select-input-bottom\':isDropped}">'+
    					'<div class="ngm-select-placeholder">'+
-   						'<span class="ngm-select-floating-label" ng-class ="{\'ngm-select-float-label\': selected[property] || selected}">{{placeholder}}</span>'+
+   						'<span class="ngm-select-floating-label" ng-class ="{\'ngm-select-float-label\': selected[property] || selected , \'ngm-select-active-float-label\': isDropped}">{{placeholder}}</span>'+
    					'</div>'+
    					'<div class="ngm-select-selected-item" ng-click="open()">'+
    						'{{selected[property] || selected || placeholder}}'+
