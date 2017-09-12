@@ -3,6 +3,7 @@
 	height: 40px;
 	margin-top: 10px;
 	border-bottom: 2px solid #757575;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .ngm-select-floating-label{
 	position: relative;
@@ -31,6 +32,7 @@
 	font-size: 16px;
 	color: #FFF;
 	z-index: 999;
+	text-align: center;
 }
 
 .ngm-select-load-list-container{
