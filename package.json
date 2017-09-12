@@ -1,0 +1,29 @@
+{
+  "name": "angular-mobile-select",
+  "version": "0.0.1-Alpha-01",
+  "description": "Keyboard like mobile select dropdown with angulat",
+  "main": "angular-mobile-select.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senthil090/angular-mobile-select.git"
+  },
+  "keywords": [
+    "select",
+    "dropdown",
+    "angular"
+  ],
+  "author": "Senthilkumar S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/senthil090/angular-mobile-select/issues"
+  },
+  "homepage": "https://github.com/senthil090/angular-mobile-select#readme",
+  "dependencies": {
+     "angular": "angularjs#^1.6.6",
+    "jquery": "^3.2.1",
+    "angular-animate": "^1.6.6"
+   }
+}
