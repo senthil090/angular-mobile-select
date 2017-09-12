@@ -11,6 +11,9 @@
     font-size: 12px;
     visibility:hidden;
 }
+.ngm-select-active-float-label{
+	color: #2979FF;
+}
 .ngm-select-selected-item{
 	cursor: pointer;
 }
@@ -28,7 +31,7 @@
 }
 .ngm-select-load-header{
 	padding: 10px;
-	background: #6200EA;
+	background: #2979FF;
 	font-size: 16px;
 	color: #FFF;
 	z-index: 999;
@@ -36,7 +39,7 @@
 }
 
 .ngm-select-load-list-container{
-	max-height: 300px;
+	max-height: 250px;
 	overflow: auto;
 	z-index: 999;
 	background:#FFF;
@@ -47,7 +50,7 @@
 }
 .ngm-select-input-bottom
 {
-border-bottom: 2px solid #6200EA;
+border-bottom: 2px solid #2979FF;
 }
 .ngm-select-backdrop{
 	position: fixed;
