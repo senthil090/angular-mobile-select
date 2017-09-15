@@ -63,3 +63,11 @@ border-bottom: 2px solid #2979FF;
     transition-duration: .6s;
     transition-timing-function: cubic-bezier(.23,1,.32,1);
 }
+
+.ngm-select-full-view{
+	max-height: calc(100vh - 38px);
+	transition: max-height 0.50s ease-out;
+}
+.ngm-select-disabled-item{
+	color: rgba(0,0,0,.5);
+}

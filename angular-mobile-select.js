@@ -27,18 +27,29 @@
    					'<div class="ngm-select-load-container" ng-class={\'ngm-select-backdrop\':isDropped}>'+
 	   					'<div class="ngm-select-load-list" ng-if="isDropped">'+
 	   						'<div class="ngm-select-load-header">{{placeholder}}</div>'+
-	   						'<div class="ngm-select-load-list-container">'+
-	   							'<div class="ngm-select-list-item" ng-click="select(item)" ng-repeat="item in list">{{item[property] || item}}</div>'+
+	   						'<div class="ngm-select-load-list-container" ng-class={\'ngm-select-full-view\':isFullView}>'+
+	   							'<div class="ngm-select-list-item" ng-class={\'ngm-select-disabled-item\':item.disabled} ng-click="item.disabled || select(item)" ng-repeat="item in list">{{item[property] || item}}</div>'+
 	   						'</div>'+
 	   					'</div>'+
    					'</div>'+
 				  '</div>',
 		link : function(scope){
+
+			scope.isFullView = false;
+
 			$rootScope.$on("documentClicked", function(inner, target) { 
-	 			if (!$(target[0]).is(".ngm-select-selected-item")) 
+
+				if($(target[0]).is(".ngm-select-load-header")){
+					scope.$apply(function() {
+						scope.isFullView = true;
+					});
+				}
+	 			if (!$(target[0]).is(".ngm-select-selected-item") && !$(target[0]).is(".ngm-select-load-header")) {
 	 				scope.$apply(function() { 
-	 					scope.isDropped  = false;
-	 				}); 		
+						 scope.isDropped  = false;
+						 scope.isFullView = false;
+					 }); 		
+				}
 	 		});
 
 	 		scope.open = function(){
@@ -55,15 +66,15 @@
 
    app.animation('.ngm-select-load-list', function() {
 		return {
-		enter: function(element, done) {
-			$(element).hide().slideDown();
-			return function(cancelled) {
+			enter: function(element, done) {
+				$(element).hide().slideDown();
+				return function(cancelled) {
 
-			};
-		},
-		leave: function(element, done) {
-			$(element).slideUp();
-		}
+				};
+			},
+			leave: function(element, done) {
+				$(element).slideUp();
+			}
 		};
    });
 
