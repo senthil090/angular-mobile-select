@@ -24,7 +24,7 @@
 
 		$scope.country = "Zimbabwe";
 
-		$scope.switcher =[ {"key":"Yes"},{"key":"No"}]
+		$scope.switcher =[ {"key":"Yes","disabled":true},{"key":"No"}]
 
 		$scope.switch = "";
 

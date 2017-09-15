@@ -1,6 +1,6 @@
 {
   "name": "angular-mobile-select",
-  "version": "0.0.1-Alpha-03",
+  "version": "0.0.1-Alpha-04",
   "description": "Keyboard like mobile select dropdown with angulat",
   "main": "angular-mobile-select.js",
   "scripts": {
